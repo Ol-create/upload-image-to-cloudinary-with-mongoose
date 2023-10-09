@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose")
 const imageRouter = require("./routes/upload")
+require("dotenv").config();
 
 const app = express()
 app.use("/api/images", imageRouter);
